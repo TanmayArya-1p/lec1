@@ -1,0 +1,94 @@
+#topbar {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-left: 10px;
+    height:5%;
+    align-items: center ;
+    width: 95%;
+    margin-top: 10px;
+    padding:8px;
+    box-shadow: #333;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #000000, #0f0f0f);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.heading {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background:linear-gradient(180deg, #000000, #252525);
+    justify-content: center;
+}
+body, header {
+    margin: 0;
+    padding: 0;
+}   
+.ls {
+    color: white;
+    margin-top:20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 25px;
+}
+.prompt {
+    color: green;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(50deg, #232323, #262626);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+}
+.contact-button {
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    border-color: #000000;
+    padding: 10px;
+}
+.skills-container {
+    margin-top: 10px;
+    background-color: #171717;
+    border-radius: 10px;
+    padding:8px;
+    font-family: Rubik;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}
+#cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: green;
+    animation: blink 1s step-start infinite;
+    margin-top: 8px;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+body {
+    font-family: Rubik;
+    background: linear-gradient(180deg, #000000, #252525);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#blogs-header {
+    color:white; margin-bottom:50px;margin-top: 5%;
+}
