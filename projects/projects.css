@@ -85,7 +85,7 @@ body, header {
 }
 body {
     font-family: Rubik;
-    background: linear-gradient(180deg, #000000, #191919);
+    background: linear-gradient(180deg, #000000, #080808);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@ body {
     width: 18rem;
     justify-content: center;
     align-items: center;
-    height: 12rem;
+    height: 13rem;
     box-shadow: #0f0f0f;
 }
 .project-tech {
