@@ -23,7 +23,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background:linear-gradient(180deg, #000000, #252525);
     justify-content: center;
     height: 100vh;
 }
@@ -82,7 +81,6 @@ body, header {
 }
 body {
     font-family: Rubik;
-    background: linear-gradient(180deg, #000000, #252525);
     display: flex;
     justify-content: start;
     align-items: center;
