@@ -6,7 +6,7 @@
     flex-direction: row;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding-bottom:5px; padding-top: 5px;
+    padding-bottom:0.2rem; padding-top: 5px;
 }
 .social-links-footer {
     margin-left: 5px;
@@ -14,10 +14,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .social-links-header {
-    margin-left: 5px; font-size: 12px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0.3rem; font-size: 0.8rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .social-button-div {
-    display: flex; align-items: center; gap: 10px; padding: 5px; background-color: transparent; border-radius: 10px;
+    display: flex; align-items: center; gap: 0.3rem; padding: 0.3rem; background-color: transparent; border-radius: 10px;
 }
 .social-button-a {
     display: flex; align-items: center; text-decoration: none; color: white;
@@ -28,8 +28,8 @@ footer {
 #backarrow {
     justify-content: flex-start;
     width: auto;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
     padding:0.3rem;
     border-radius: 10px;
     
