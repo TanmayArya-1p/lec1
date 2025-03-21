@@ -1,11 +1,13 @@
 #footerdiv {
     width:100%;
-    background-color: #4e4e4e6e;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(89, 89, 89, 0.3); 
     color: white;
     display: flex;
     flex-direction: row;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding-bottom:0.2rem; padding-top: 5px;
 }
 .social-links-footer {

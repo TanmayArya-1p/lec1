@@ -67,15 +67,18 @@ body {
     padding:0.8rem
 }
 .project {
-    background: linear-gradient(50deg, #232323, #313131);
+    border-radius: 20px;
+    backdrop-filter: blur(0.8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(89, 89, 89, 0.3); 
     color: white;
     padding: 1rem;
     margin: 2rem;
     border-radius: 10px;
-    width: 18rem;
+    width: 15rem;
     justify-content: center;
     align-items: center;
-    height: 13rem;
+    height: 14rem;
     box-shadow: #0f0f0f;
 }
 .project-tech {

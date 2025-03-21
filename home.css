@@ -3,15 +3,15 @@
     justify-content: left;
     flex-direction: row;
     padding-left: 1rem;
-    height:5%;
-    align-items: center ;
+    height: 5%;
+    align-items: center;
     width: 95%;
-    margin-top: 1rem;   
-    padding:0.5rem;
-    box-shadow: #333;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #131313, #1d1d1d);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(0.5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(89, 89, 89, 0.3); 
 }
 .heading {
     background-color: transparent;
@@ -116,6 +116,8 @@ footer {
 }
 #headerdiv {
     display: flex; justify-content: center; align-items: center; width: 100%;justify-content: center;align-items: center;
+    background: transparent;
+
 }
 .big-header {
     font-size: 2.5rem;font-family: Rubik; font-weight: 2rem;color:white; margin-top: 0.6rem;margin-bottom:0.4rem;
