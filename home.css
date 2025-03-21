@@ -36,7 +36,7 @@ body, header {
     color: white;
     margin-top:1rem;
     font-family: "JetBrains Mono", monospace;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .prompt {
     color: green;
