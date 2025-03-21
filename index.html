@@ -11,20 +11,34 @@
         <style>
             .header-button {
                 padding-inline: 0.8rem;
+                border-radius: 8px;
+            }
+            .header-button:hover {
+                background-color: #4040406e;
+            }
+            #home-button:hover {
+                background-color: #4040406e;
+            }
+            #home-button {
+                padding-inline: 0.8rem;
+                border-radius: 8px;
+            }
+            #contact-me-submit-button:hover {
+                background-color: #4040406e;
             }
         </style>
     </head>
     <body>
         <div id="headerdiv">        
             <div id="topbar" style="width: 90%;">
-                <a href="/" style="padding-right: 0.8rem;margin-left: 1rem ; font-size: 100;">
+                <a href="/" id="home-button" style="padding-right: 0.8rem;margin-left: 1rem ; font-size: 100;">
                     <button class="heading" style="font-size:2rem;padding: 0.2rem; color: green">
                         <b>~</b>
                     </button>
-                </a>
-                <a href="/projects" class="header-button"><button class="heading">Projects</button></a>
-                <a href="/blogs" class="header-button"><button class="heading">Blogs</button></a>
-                <a href="#contact" class="header-button"><button class="heading">Contact</button></a>
+                <a href="/blogs"  id="blogs-button" class="header-button"><button class="heading">Blogs</button></a>
+                <a href="/projects"  id="projects-button" class="header-button"><button class="heading">Projects</button></a>
+
+                <a href="#contact" id="contact-button" class="header-button"><button class="heading">Contact</button></a>
 
             </div>
         </div>
