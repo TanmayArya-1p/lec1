@@ -8,9 +8,18 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background:linear-gradient(180deg, #000000, #252525);
     justify-content: center;
     color:white
+}
+body {
+    --dot-bg: #161616;
+    --dot-color: #848282;
+    --dot-size: 1px;
+    --dot-space: 10px;
+    background:
+      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      var(--dot-color);
 }
 body, header {
     margin: 0;
@@ -45,7 +54,6 @@ body, header {
 }
 body {
     font-family: Rubik;
-    background: linear-gradient(180deg, #000000, #131313);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +67,7 @@ body {
     padding:0.8rem
 }
 .project {
-    background-color: #222222;
+    background: linear-gradient(50deg, #232323, #313131);
     color: white;
     padding: 1rem;
     margin: 2rem;
