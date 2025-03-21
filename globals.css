@@ -17,7 +17,7 @@
     margin-left: 5px; font-size: 12px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .social-button-div {
-    display: flex; align-items: center; gap: 10px; padding: 5px; background-color: #333; border-radius: 10px;
+    display: flex; align-items: center; gap: 10px; padding: 5px; background-color: transparent; border-radius: 10px;
 }
 .social-button-a {
     display: flex; align-items: center; text-decoration: none; color: white;
@@ -30,5 +30,10 @@ footer {
     width: auto;
     margin-top: 30px;
     margin-left: 30px;
+    padding:0.3rem;
+    border-radius: 10px;
     
+}
+#backarrow:hover {
+    background-color: #333;
 }
