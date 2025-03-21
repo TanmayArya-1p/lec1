@@ -30,6 +30,51 @@
 
                 }
             }
+            .project {
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 12.5rem;
+                transition: transform 0.3s ease-in-out;
+            }
+            .project-title, .project-tech {
+                transition: transform 0.3s ease-in-out;
+            }
+            .project-description {
+                position: absolute;
+                bottom: -100%;
+                left: 0;
+                width: 100%;
+                height: 100% ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 1rem;
+                box-sizing: border-box;
+                text-align: center;
+                transition: bottom 0.3s ease-in-out;
+            }
+            .project:hover .project-description,
+            .project:focus .project-description {
+                bottom: 0;
+            }
+            .project:hover .project-title,
+            .project:hover .project-tech,
+            .project:focus .project-title,
+            .project:focus .project-tech {
+                display: none;
+            }
+            .project:focus {
+                outline: none;
+            }
+            .project-description{
+                display: flex; flex-direction: column;
+            }
         </style>
     </head>
     <body>
@@ -43,40 +88,48 @@
         </div>
         <br>
         <div class="project-container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
-            <div class="project" style="padding: 1rem; text-align: center;">
-                <h2>Pigeon</h2>
-                Notification Scheduler for Expo Notifications and soon other Cloud Messaging Services
-                <div class="project-tech">Technologies: Golang, Python, Javascript, React-Router, Redis, MongoDB, FastAPI, Docker</div>
+            <div class="project" style="padding: 1rem; text-align: center;" tabindex="0">
+                <h2 class="project-title">Pigeon</h2>
+                <div class="project-description" style="">
+                    Notification Scheduler for Expo Notifications and soon other Cloud Messaging Services
+                    <br><br><strong>Technologies: Golang, Python, Javascript, React-Router, Redis, MongoDB, FastAPI, Docker</strong>
+                </div>
             </div>
-            <div class="project" style="padding: 1rem; text-align: center; ">
-                <h2>Photon</h2>
-                P2P and E2E encrypted photo gallery sync app
-                <div class="project-tech">Technologies: Golang, React-Native, Expo, MongoDB, Python, FastAPI, Docker</div>
+            <div class="project" style="padding: 1rem; text-align: center;" tabindex="0">
+                <h2 class="project-title">Photon</h2>
+                <div class="project-description">
+                    P2P and E2E encrypted photo gallery sync app
+                    <br><br><strong>Technologies: Golang, React-Native, Expo, MongoDB, Python, FastAPI, Docker</strong>
+                </div>
             </div>
-            <div class="project" style="padding: 1rem; text-align: center;">
-                <h2>FRelay</h2>
-                A File Relay Server
-                <div class="project-tech">Technologies: Python, FastAPI, Docker</div>
+            <div class="project" style="padding: 1rem; text-align: center;" tabindex="0">
+                <h2 class="project-title">FRelay</h2>
+                <div class="project-description">
+                    A File Relay Server
+                    <br><br><strong>Technologies: Python, FastAPI, Docker</strong>
+                </div>
             </div>
-            <div class="project" style="padding: 1rem; text-align: center;">
-                <h2>CPSched</h2>
-                A simple app to view upcoming online Competitive Programming Contests and get reminders
-                <div class="project-tech">Technologies: React-Native, Expo, Python, Selenium, Redis, Cloudflare, Docker</div>
+            <div class="project" style="padding: 1rem; text-align: center;" tabindex="0">
+                <h2 class="project-title">CPSched</h2>
+                <div class="project-description">
+                    A simple app to view upcoming online Competitive Programming Contests and get reminders
+                    <br><br><strong>Technologies: React-Native, Expo, Python, Selenium, Redis, Cloudflare, Docker</strong>
+                </div>
             </div>
-            <div class="project" style="padding: 1rem; text-align: center;">
-                <h2>Capture</h2>
-                A Discord Bot to quickly capture and share short videos with friends instantly
-                <div class="project-tech">Technologies: Python, AsyncIO</div>
+            <div class="project" style="padding: 1rem; text-align: center;" tabindex="0">
+                <h2 class="project-title">Capture</h2>
+                <div class="project-description">
+                    A Discord Bot to quickly capture and share short videos with friends instantly
+                    <br><br><strong>Technologies: Python, AsyncIO</strong>
+                </div>
             </div>
-            <div class="project" style="padding: 1rem; text-align: center;">
-                <h2>UrbanDictAPI</h2>
-                A simple PyPi package to get Urban Dictionary definitions and query the Urban Dictionary
-                <div class="project-tech">Technologies: Python, Selenium</div>
+            <div class="project" style="padding: 1rem; text-align: center;" tabindex="0">
+                <h2 class="project-title">UrbanDictAPI</h2>
+                <div class="project-description" style="justify-content: center; justify-self: ;">
+                    A simple PyPi package to get Urban Dictionary definitions and query the Urban Dictionary
+                    <br><br><strong>Technologies: Python, Selenium</strong>
+                </div>
             </div>
-
-
- 
-            
         </div>
         <div style="margin-top: 1rem;margin-bottom: 10rem;"">
             Check out My Other Projects on My <a style="color: white;" href="https://github.com/TanmayArya-1p">Github</a>

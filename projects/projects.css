@@ -44,7 +44,7 @@ body, header {
 }
 body {
     font-family: Rubik;
-    background: linear-gradient(180deg, #000000, #080808);
+    background: linear-gradient(180deg, #000000, #131313);
     display: flex;
     justify-content: center;
     align-items: center;
