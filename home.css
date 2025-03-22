@@ -77,13 +77,16 @@ body, header {
 .skills-container {
     margin-top: 1rem;
     background-color: #171717;
-    border-radius:1rem;
-    padding:1rem;
+    border-radius: 1rem;
+    padding: 1rem;
     font-family: Rubik;
     color: white;
     border: none;
     font-size: 2rem;
-    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+.skills-container:hover {
+    transform: translateY(-10px);
 }
 #cursor {
     display: inline-block;
