@@ -9,9 +9,9 @@
     margin-top: 1rem;
     padding: 0.5rem;
     border-radius: 20px;
-    backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(0.75px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(89, 89, 89, 0.3); 
+    border: 2px solid rgba(67, 67, 67, 0.3); 
 }
 .heading {
     background-color: transparent;
@@ -30,7 +30,7 @@ body {
 }
 body {
     --dot-bg: #161616;
-    --dot-color: #848282;
+    --dot-color: #5e5e5e;
     --dot-size: 1px;
     --dot-space: 10px;
     background: 
@@ -57,7 +57,7 @@ body, header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, #252525, #1c1c1c);
+    background: radial-gradient(circle, #252525, #212121);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.15);
     margin: auto;
     margin-top: 5%;
