@@ -36,16 +36,11 @@ jobs:
           }')
           token=$(echo $response | jq -r '.token')
           curl --location --request PUT 'https://mastergasper.sdslabs.co/apps/tcan' \
-          --header 'Authorization: Bearer ${token}' \
+          --header "Authorization: Bearer ${token}" \
           --header 'Content-Type: application/json' \
           --data '{
             "password": "${{secrets.GASPER_PASSWORD}}",
             "git": {
-              "repo_url": "https://github.com/TanmayArya-1p/lec1",
-              "branch": "master"
-            },
-            "context": {
-              "index": "index.html",
-              "port": 80
+              "branch" : "master"
             }
           }'
