@@ -1,13 +1,12 @@
 name: DigitalOceanDeploy
 on:
-  workflow_dispatch:
-    {}
+  workflow_dispatch: {}
   push:
     branches:
       - master
 jobs:
   deploy:
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -24,3 +23,21 @@ jobs:
             docker compose down
             docker compose build --no-cache
             docker compose up -d
+
+      - name: Gasper Update
+        env:
+          GASPER_PASSWORD: ${{secrets.GASPER_PASSWORD}}
+        run: |
+          response=$(curl --silent --location 'https://mastergasper.sdslabs.co/auth/login' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{
+            "email": "tanmayarya2018@gmail.com",
+            "password": "${{secrets.GASPER_PASSWORD}}"
+          }')
+          token=$(echo $response | jq -r '.token')
+          curl --location --request PUT 'https://mastergasper.sdslabs.co/apps/tcan' \
+          --header "Authorization: Bearer ${token}" \
+          --header 'Content-Type: application/json' \
+          --data '{
+            "password": "${{secrets.GASPER_PASSWORD}}"
+          }'
