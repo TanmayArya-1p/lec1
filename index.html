@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="globals.css">
         <style>
             .header-button {
-                padding-inline: 0.8rem;
+                padding-inline: 0.5rem;
                 border-radius: 8px;
             }
             .header-button:hover {
@@ -29,13 +29,24 @@
             .heading {
                 font-family: "Rubik";
             }
+            #tcan-header {
+                font-size: 1.3rem;
+                font-family: "Rubik";
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+            @media (max-width: 449px) {
+                #tcan-header {
+                    display: none;
+                }
+            }
 
         </style>
     </head>
     <body>
         <div id="headerdiv">        
             <div id="topbar" style="width: 90%; font-family: Rubik;">
-                <a href="/" id="home-button" style="padding-right: 0.8rem; margin-left: 0.2rem; font-size: 100; cursor: pointer;">
+                <a href="/" id="home-button" style="padding-right: 0.8rem; margin-left: 0.15rem; font-size: 100; cursor: pointer;">
                     <button class="heading" style="font-size:2rem; padding: 0.2rem; color: green; cursor: pointer;">
                         <b>~</b>
                     </button>
@@ -49,6 +60,9 @@
                 <a href="#contact" id="contact-button" class="header-button" style="cursor: pointer;">
                     <button class="heading" style="cursor: pointer;">Contact</button>
                 </a>
+                <div id="tcan-header">
+                    tcan
+                </div>
 
             </div>
         </div>
@@ -60,7 +74,7 @@
                 whoami
                 <br>
                 <div style="margin-top:1rem; margin-bottom: 0.5rem;">
-                    Hi I am Tanmay Arya (alias : tcan) a student, developer and a tech enthusiast.
+                    Hi, I am Tanmay Arya ( alias : <span style="color:green"><strong>tcan</strong></span> ) a student, developer and a tech enthusiast.
                     <br>
                     I am currently pursuing a bachelors in Computer Science from IIT Roorkee (Expected Year of Graduation: 2028)
                 </div>
